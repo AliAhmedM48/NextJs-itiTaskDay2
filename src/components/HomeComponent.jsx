@@ -77,7 +77,7 @@ const HomeComponent = () => {
           </header>
 
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {products.slice(0, 4).map((product) => (
+            {products?.slice(0, 4).map((product) => (
               <ProductsCardComponent key={product.id} product={product} />
             ))}
           </ul>
@@ -105,7 +105,7 @@ const HomeComponent = () => {
           </header>
 
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {news.slice(0, 4).map(item => (<NewsCard key={Math.random()} article={item} />))}
+            {news?.slice(0, 4).map(item => (<NewsCard key={Math.random()} article={item} />))}
           </ul>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link
